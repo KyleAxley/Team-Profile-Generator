@@ -18,8 +18,8 @@ test('get intern school', () => {
 test('intern roles', () => {
     const intern = new Intern('John', '117', 'MChief@cortana.org', 'USNC Spartan Project');
 
-    expect(intern.getRole()).toHaveProperty('name')
-    expect(intern.getRole()).toHaveProperty('id')
-    expect(intern.getRole()).toHaveProperty('email')
-    expect(intern.getRole()).toHaveProperty('school')
+    // expect(intern.getRole()).toHaveProperty('name')
+    // expect(intern.getRole()).toHaveProperty('id')
+    // expect(intern.getRole()).toHaveProperty('email')
+    expect(intern.getRole()).toBe('Intern')
 })

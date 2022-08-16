@@ -18,8 +18,8 @@ test("Engineer's github", () => {
 test("Engineer's role", () => {
     const engineer = new Engineer('John', '117', 'MChief@cortana.org', 'KyleAxley');
     
-    expect(engineer.getRole()).toHaveProperty('name')
-    expect(engineer.getRole()).toHaveProperty('id')
-    expect(engineer.getRole()).toHaveProperty('email')
-    expect(engineer.getRole()).toHaveProperty('github')
+    // expect(engineer.getRole()).toHaveProperty('name')
+    // expect(engineer.getRole()).toHaveProperty('id')
+    // expect(engineer.getRole()).toHaveProperty('email')
+    expect(engineer.getRole()).toBe('Engineer')
 });
